@@ -14,7 +14,7 @@ public class NameSearchController {
 	@Autowired
 	NameSearchService nameSearchService;
 
-	@RequestMapping("/search")
+	@RequestMapping("/names")
 	public List<String> getAllNames(@RequestParam("data") String data) {
 		return nameSearchService.getAllNames(data);
 	}
