@@ -5,7 +5,7 @@ provides auto complete feature for names that are  typing in
 ## Installation and run
 
 Clone the project<br />
-Go to the directory pom.xml<br />
+Go to the directory where pom.xml is present<br />
 mvn package<br />
 java -jar target/name-search-0.0.1-SNAPSHOT.jar
 
