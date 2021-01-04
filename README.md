@@ -2,7 +2,7 @@
 Name search Service
 provides auto complete feature for names that are  typing in
 
-## Installation and run
+## Installation and running the application
 
 Clone the project<br />
 Go to the directory where pom.xml is present<br />
