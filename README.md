@@ -5,8 +5,8 @@ provides auto complete feature for names that are  typing in
 ## Installation and run
 
 Clone the project<br />
-Go to the directory pom.xml
-mvn package
+Go to the directory pom.xml<br />
+mvn package<br />
 java -jar target/name-search-0.0.1-SNAPSHOT.jar
 
 ## Usage
