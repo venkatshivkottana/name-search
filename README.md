@@ -15,6 +15,8 @@ If we have curl just open the curl with command prompt<br />
 http://localhost:8080/names?input=a or <br />
 simply open the above link in any browser
 
+API documentation is placed at http://localhost:8080/swagger-ui.html
+
 Note:UI for this micro service is exists in a different repository called name-search-ui
 
 ## Contributing
