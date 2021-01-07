@@ -25,22 +25,20 @@ public class NameSearchControllerTest {
 	private MockMvc mockMvc;
 
 	@MockBean
-	private NameSearchService nameSearchService ;
-	
-	List<String> mockNames = (List<String>) Arrays.asList("ajeeth","venkat","rajan");
+	private NameSearchService nameSearchService;
+
+	List<String> mockNames = (List<String>) Arrays.asList("ajeeth", "venkat", "rajan");
 
 	@Test
-	public void retrieveDetailsForCourse() throws Exception {
+	public void testNamesAPI() throws Exception {
 
 		Mockito.when(nameSearchService.getAllNames(Mockito.anyString())).thenReturn(mockNames);
 
-		RequestBuilder requestBuilder = MockMvcRequestBuilders.get(
-				"/names?input=a").accept(MediaType.APPLICATION_JSON);
+		RequestBuilder requestBuilder = MockMvcRequestBuilders.get("/api/names?input=a").accept(MediaType.APPLICATION_JSON);
 
 		MvcResult result = mockMvc.perform(requestBuilder).andReturn();
-		
+
 		String expected = "[ajeeth,venkat,rajan]";
-		JSONAssert.assertEquals(
-				expected, result.getResponse().getContentAsString(), JSONCompareMode.LENIENT);
+		JSONAssert.assertEquals(expected, result.getResponse().getContentAsString(), JSONCompareMode.LENIENT);
 	}
 }
